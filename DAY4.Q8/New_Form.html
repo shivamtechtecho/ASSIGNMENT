@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        .parent {
+            width: 100%;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            box-shadow: rgb(2, 0, 53) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+            background-color: orangered;
+            height: 660px;
+        }
+        h1{
+            text-align: center;
+        }
+        #Terms{
+            width: 5%;
+        }
+        .box {
+            width: 25%;
+            background-color: rgb(222, 220, 220);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-radius: 2%;
+            margin-left: 38%;
+            margin-bottom: 2px;
+            box-shadow: rgba(0, 0, 169, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+            box-shadow: rgba(18, 23, 176, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        }
+        textarea{
+            width: 90%;
+            margin-left: 3.5%;
+        }
+        select{
+            width: 90%;
+            margin-left: 3.5%;
+        }
+        .checkbox{
+            display: flex;
+        }
+        h4{
+            width: 70%;
+            margin-left: -35px;
+        }
+        .box input{
+            width: 92%;
+            margin-left: 2%;
+            margin-right: 10%;
+        }
+        
+        .radio{
+            width: 80%;
+            display: flex;
+        }
+        label{
+            margin-left: 3.6%;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        .box button{
+            width: 30%;
+            border-radius: 12%;
+            margin: auto;
+            margin-bottom: 12px;
+            margin-top: -15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <form action="">
+            <h1>Feedback Form</h1>
+            <div class="box">
+                <label for="feedback">Feedback Type:</label>
+                <select id="feedback">
+                    <option value="">Select Feedback</option>
+                    <option value="+ve">Positive</option>
+                    <option value="-ve">Negative</option>
+                    <option value="0">Nutral</option>
+                </select>
+                <label for="message">Message:</label>
+                <textarea name="" id="message" cols="60" rows="10" placeholder="Enter Your Feedback"></textarea>
+                <label for="rating">Website Rating:</label>
+                <div class="radio">
+                    <input type="radio" name="" id="rating">1</input>
+                    <input type="radio" name="" id="rating">2</input>
+                    <input type="radio" name="" id="rating">3</input>
+                    <input type="radio" name="" id="rating">4</input>
+                    <input type="radio" name="" id="rating">5</input>
+                </div>
+                <label for="age">Age:</label>
+                <input type="number" name="" id="age" placeholder="Enter your age" min="10" max="100" required></input>
+                <label for="email">E-mail :</label>
+                <input type="email" id="email" placeholder="ABC@gmail.com" required></input>
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="enter your password" min="8"></input>
+                <label for="GitHub">Github:</label>
+                <input type="url" id="GitHub" placeholder="Paste the URL-link here">
+                <div class="checkbox">
+                    <label for="Terms"></label>
+                    <input type="checkbox" id="Terms"></input>
+                    <h4 class="h4">I agree to the terms and conditions</h4>
+                </div>
+                <button>submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
