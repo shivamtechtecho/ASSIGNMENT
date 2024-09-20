@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        }
+        .div2{
+            width: 60%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        h5+button{
+            background-color: rgb(244, 255, 254);
+            border-radius: 5px;
+            color: blue;
+            border: none;
+            width: 15%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            justify-content: center;
+        }
+        button+button{
+            border: 1px solid lightcoral;
+            color: lightcoral;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 5px;
+        }
+        button img{
+            width: 15%;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="parent">
+                <div>
+                    <img src="https://masaischool.com/learn/images/navbar/logo.svg" alt="">
+                </div>
+                <div class="div2">
+                    <label for="COURSES">COURSES</label>
+                    <select name="" id="COURSES"></select>
+                    <h5>FEES & ISA</h5>
+                    <h5>ABOUT US</h5>
+                    <h5>HIRE FROM US</h5>
+                    <h5>FAQ</h5>
+                    <h5>EVENTS</h5>
+                    <button>
+                        <p> REFER & EARN </p>
+                        <img src="volunteer_activism_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                    </button>
+                    <button>
+                        LOGIN
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+</body>
+</html>
