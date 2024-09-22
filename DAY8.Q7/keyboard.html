@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            background-color: aqua;
+        }
+        .keyboard{
+            display: grid;
+            grid-template-columns: repeat(12,1fr);
+            grid-template-rows: repeat(5,25px);
+            width: 80%;
+            margin: 10px;
+            padding: 20px;
+            gap: 20px;
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+            background-color: #171b1a;
+        }
+        .keyboard div{
+            color: rgb(2, 121, 248);
+            /* text-align: center; */
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+            font-weight: bold;
+            font-size: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 6px;
+            background-color: #373e42;
+        }
+        .keyboard div:hover{
+            cursor: pointer;
+            color: black;
+            background-color: magenta;
+            box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+        }
+        .space{
+            grid-column: 5/span 4;
+        }
+        .enter{
+            grid-column: 11/span 2;
+        }
+        .shift{
+            grid-column: 11/span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="keyboard">
+            <div>-</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>0</div>
+            <div>Delete</div>
+            <div>tab</div>
+            <div>Q</div>
+            <div>W</div>
+            <div>E</div>
+            <div>R</div>
+            <div>T</div>
+            <div>Y</div>
+            <div>U</div>
+            <div>I</div>
+            <div>O</div>
+            <div>P</div>
+            <div>\</div>
+            <div>caps</div>
+            <div>A</div>
+            <div>S</div>
+            <div>D</div>
+            <div>F</div>
+            <div>G</div>
+            <div>H</div>
+            <div>J</div>
+            <div>K</div>
+            <div>L</div>
+            <div class="enter">Enter</div>
+            <div>shift</div>
+            <div>Z</div>
+            <div>X</div>
+            <div>C</div>
+            <div>V</div>
+            <div>B</div>
+            <div>N</div>
+            <div>M</div>
+            <div>></div>
+            <div><</div>
+            <div class="shift">shift</div>
+            <div>🌐</div>
+            <div>control</div>
+            <div>option</div>
+            <div>alt</div>
+            <div class="space">space</div>
+            <div>alt</div>
+            <div>option</div>
+            <div>⬅</div>
+            <div>➡</div>
+        </div>
+    </div>
+</body>
+</html>
