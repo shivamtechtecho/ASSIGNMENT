@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .boxes{
+            width: 100%;
+            background-color: blueviolet;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2,60px);
+            gap: 20px;
+        }
+        .orange{
+            background-color: orangered;
+            grid-column: 1 / span 2;
+        }
+        .plump{
+            background-color: plum;
+            /* grid-row:  1/span 2; */
+        }
+        .blue{
+            background-color: blue;
+        }
+        .brown{
+            background-color: brown;
+        }
+    </style>    
+</head>
+<body>
+    <div class="boxes">
+        <div class="orange"></div>
+        <div class="plump"></div>
+        <div class="blue"></div>
+        <div class="brown"></div>
+    </div>
+</body>
+</html>
