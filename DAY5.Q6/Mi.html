@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            width: 100%;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            border-radius: 1%;
+        }
+
+        .div {
+            display: flex;
+        }
+
+        a {
+            text-decoration: none;
+            margin: auto;
+            margin: 1%;
+        }
+
+        .ul {
+            display: flex;
+            list-style: none;
+        }
+
+        #stnav {
+            width: 70%;
+        }
+
+        .button {
+            /* border: 1px red; */
+            box-shadow: rgba(255, 2, 2, 0.993) 0px 22px 70px 4px;
+            border: none;
+            border-radius: 2px;
+            width: 40%;
+            background-color: rgba(243, 214, 214, 0.992);
+        }
+
+        .button:hover {
+            box-shadow: rgb(59, 255, 5) 0px 22px 70px 4px;
+            border-radius: 5%;
+        }
+
+        .button_color {
+            color: rgba(226, 8, 8, 0.992);
+        }
+
+        #ul2 {
+            margin-left: 40%;
+        }
+
+        #ul1_li {
+            margin: 4%;
+        }
+
+        #nav_ul2_li {
+            margin: 3%;
+            margin-top: 9%;
+        }
+
+        .TV {
+            width: 126px;
+        }
+
+        #logo {
+            width: 6%;
+            height: 65%;
+            border-radius: 20%;
+            margin-left: 1%;
+            margin-top: 2%;
+        }
+
+        #logo:hover {
+            width: 7%;
+        }
+
+        #img {
+            width: 10%;
+            margin-left: 5%;
+            height: 80%;
+            margin-top: 1%;
+        }
+
+        .person {
+            margin-right: 28px;
+        }
+
+        #div1 {
+            display: flex;
+            width: 80%;
+            margin: auto;
+            margin-top: 2%;
+            margin-left: 20%;
+        }
+
+        .div1_card {
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            margin: 1%;
+            width: 200px;
+            border-radius: 10%;
+        }
+
+        .name {
+            margin: 3%;
+        }
+
+        .div11 {
+            display: flex;
+            width: 150%;
+            margin-left: 5%;
+        }
+
+        .product_img {
+            width: 25%;
+            margin-left: 10%;
+        }
+
+        #div2 {
+            display: flex;
+            width: 58%;
+            margin: 0px 200px 0px 165px;
+            background-color: rgb(245, 228, 208);
+            border-radius: 2%;
+            margin-top: 1%;
+            margin-bottom: 1%;
+            margin-left: 20%;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+
+        #div3 {
+            display: flex;
+            width: 80%;
+        }
+
+        .div2_img {
+            width: 88%;
+            border-radius: 10%;
+            margin-left: 330px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
+
+        .card1 {
+            margin-left: 30%;
+        }
+
+        .div2_text {
+            margin: 20px;
+        }
+
+        .div_div2_img {
+            margin-top: 3px;
+            width: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="div">
+                <ul class="ul" id="stnav">
+                    <img id="logo"
+                        src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/xiaomi-mi-logo-icon.png"
+                        alt="logo">
+                    <li id="ul1_li"><a href="">Store</a></li>
+                    <li id="ul1_li"><a href="">Phone</a></li>
+                    <li id="ul1_li" class="TV"><a href="">TV & Smart Home</a></li>
+                    <li id="ul1_li"><a href="">Tablet</a></li>
+                    <li id="ul1_li"><a href="">LifeStyle</a></li>
+                </ul>
+                <ul class="ul" id="ul2">
+                    <li id="nav_ul2_li"><a href="">Discover</a></li>
+                    <li id="nav_ul2_li"><a href="">Support</a></li>
+                    <img id="img" src="search_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="search">
+                    <img id="img" src="shopping_cart_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="cart">
+                    <img id="img" class="person" src="person_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="profile">
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div>
+        <div id="div1">
+            <div class="div1_card" id="card1">
+                <div class="name">
+                    <h3>Xiaomi Pad 6</h3>
+                    <button class="button">
+                        <p class="button_color">37% off</p>
+                    </button>
+                </div>
+                <div class="div11">
+                    <div>
+                        <p><b>From <br>$3000<br><p style="margin-top: 15px;"><s>$3100</s></p></b></p>
+                    </div>
+                    <div>
+                        <img class="product_img" style="width: 45%; margin-left: 5%;"
+                            src="https://m.media-amazon.com/images/I/41uBZTsvRSL._AC_.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="div1_card">
+                <div class="name">
+                    <h3>Mi True Wireless</h3>
+                    <button class="button">
+                        <p class="button_color">37% off</p>
+                    </button>
+                </div>
+                <div class="div11">
+                    <div>
+                        <p><b>From <br>$3000<br><p style="margin-top: 15px;"><s>$3100</s></p></b></p>
+                    </div>
+                    <div>
+                        <img class="product_img"
+                            src="https://vishalecoms.com/wp-content/uploads/2020/07/51UDqk0jUAL._AC_SL1200_.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="div1_card">
+                <div class="name">
+                    <h3>In Air Pro HD-Mi</h3>
+                    <button class="button">
+                        <p class="button_color">37% off</p>
+                    </button>
+                </div>
+                <div class="div11">
+                    <div>
+                        <p><b>From <br>$3000<br><p style="margin-top: 15px;"><s>$3100</s></p></b></p>
+                    </div>
+                    <div>
+                        <img class="product_img"
+                            src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1489124939.30721980.jpg"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="div1_card">
+                <div class="name">
+                    <h3>Mi Basic Hedset</h3>
+                    <button class="button">
+                        <p class="button_color">37% off</p>
+                    </button>
+                </div>
+                <div class="div11">
+                    <div>
+                        <p><b>From <br>$3000<br><p style="margin-top: 15px;"><s>$3100</s></p></b></p>
+                    </div>
+                    <div>
+                        <img class="product_img"
+                            src="https://rukminim2.flixcart.com/image/850/1000/krntoy80/headphone/j/l/n/ydjc01jy-mi-original-imag5egze7eb9taj.jpeg?q=90&crop=false"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="div2">
+            <div class="div2_text">
+                <h1>
+                    Save Up to 65% <br>
+                    On Chargers & Cables
+                </h1>
+                <p>
+                    Free Delivery on All Products
+                </p>
+                <button>
+                    Buy Now
+                </button>
+            </div>
+            <div class="div_div2_img">
+                <img class="div2_img"
+                    src="https://rukminim2.flixcart.com/image/850/1000/ku2zjww0/power-bank/u/c/n/power-bank-hypersonic-20000mah-50w-pb2050szm-mi-original-imag7a4fgzqbzq8e.jpeg?q=90&crop=false"
+                    alt="">
+            </div>
+        </div>
+        <div id="div1">
+            <div class="div1_card">
+                <div class="name">
+                    <h3>Xiaomi Pad 6</h3>
+                    <button class="button">
+                        <p class="button_color">37% off</p>
+                    </button>
+                </div>
+                <div class="div11">
+                    <div>
+                        <p><b>From <br>$3000<br><p style="margin-top: 15px;"><s>$3100</s></p></b></p>
+                    </div>
+                    <div>
+                        <img class="product_img" style="width: 45%;"
+                            src="https://m.media-amazon.com/images/I/41uBZTsvRSL._AC_.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="div1_card">
+                <div class="name">
+                    <h3>Mi True Wireless</h3>
+                    <button class="button">
+                        <p class="button_color">37% off</p>
+                    </button>
+                </div>
+                <div class="div11">
+                    <div>
+                        <p><b>From <br>$3000<br><p style="margin-top: 15px;"><s>$3100</s></p></b></p>
+                    </div>
+                    <div>
+                        <img class="product_img"
+                            src="https://vishalecoms.com/wp-content/uploads/2020/07/51UDqk0jUAL._AC_SL1200_.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="div1_card">
+                <div class="name">
+                    <h3>In Air Pro HD-Mi</h3>
+                    <button class="button">
+                        <p class="button_color">37% off</p>
+                    </button>
+                </div>
+                <div class="div11">
+                    <div>
+                        <p><b>From <br>$3000<br><p style="margin-top: 15px;"><s>$3100</s></p></b></p>
+                    </div>
+                    <div>
+                        <img class="product_img"
+                            src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1489124939.30721980.jpg"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="div1_card">
+                <div class="name">
+                    <h3>Mi Basic Hedset</h3>
+                    <button class="button">
+                        <p class="button_color">37% off</p>
+                    </button>
+                </div>
+                <div class="div11">
+                    <div>
+                        <p><b>From <br>$3000<br><p style="margin-top: 15px;"><s>$3100</s></p></b></p>
+                    </div>
+                    <div>
+                        <img class="product_img"
+                            src="https://rukminim2.flixcart.com/image/850/1000/krntoy80/headphone/j/l/n/ydjc01jy-mi-original-imag5egze7eb9taj.jpeg?q=90&crop=false"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
