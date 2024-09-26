@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .nav{
+            background-color: rgb(41, 41, 226);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+        }
+        .nav>div+div{
+            display: flex;
+            justify-content: space-between;
+            width: 60%;
+        }
+        .nav>div+div>div+div{
+            display: flex;
+        }
+        p{
+            color: white;
+            font-weight: 600;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        img{
+            width: 100%;
+        }
+        button{
+            padding: 12px 20px;
+            border-radius: 12px;
+            margin-left: -15px;
+            margin-top: -8px;
+            color: white;
+            font-weight: bold;
+            background-color: rgb(234, 23, 8);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div style="width: 10%;">
+            <img src="https://cdn.prod.website-files.com/62e8d2ea218fb7676b6892a6/63a9a311ecd826aa5be44d4e_NS%20Logo%20primary%20white-p-500.png" alt="">
+        </div>
+        <div>
+            <div><p>Data Science & AI</p></div>
+            <div><p>B.Tech in CS & AI</p><div style="background-color: goldenrod;height: 18px;border-radius: 10px;">NEW</div></div>
+            <div><p>Newton Edge</p></div>
+            <div><p>Refer & Earn</p></div>
+            <div><p>More <select style="background-color: #2929e1; border: hidden;" name="" id=""></select> </p></div>
+            <button>Sign up</button>
+        </div>
+    </div>
+</body>
+</html>
