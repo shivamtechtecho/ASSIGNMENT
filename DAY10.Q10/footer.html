@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        footer{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            grid-template-areas: "a a b c d e";
+            border: 2px solid black;
+        }
+        .logo~div{
+            background-color: #3040af;
+            padding: 10px;
+        }
+        h4{
+            color: white;
+            font-weight: bold;
+        }
+        p{
+            color: white;
+            font-weight: 400;
+            font-size: small;
+        }
+        .bottom{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #222222;
+            padding: 20px 2px;
+            grid-area: bc;
+        }
+        .bottom>div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .bottom p,a{
+            color: gray;
+        }
+        .bottom>p{
+            font-weight: bold;
+        }
+        .neeche{
+            width: 40%;
+        }
+        .uper{
+            width: 15%;
+        }
+        .uper img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-left: 10px;
+        }
+        a{
+            color: gray;
+        }
+        @media  screen and (min-width:501px) and (max-width:800px){
+            footer{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-areas: "b c d e"
+                                 "a a a a";
+            border: 2px solid black;
+        }
+        footer img{
+            padding: 30px;
+        }
+        .logo{
+            width: 100%;
+        }
+        footer img{
+            padding: 30px;
+        }
+        .logo{
+            width: 100%;
+        }
+        .bottom{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            background-color: #222222;
+            padding: 20px 2px;
+        }
+        .neeche{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+        .upper{
+            width: 0px;
+            height: 0px;
+        }
+        .uper img{
+            width: 0px;
+            height: 0px;
+            border-radius: 0%;
+            margin-left: 0px;
+        }
+        .uper p{
+            font-size: 0px;
+            margin-left: 0px;
+            font-weight: 0;
+        }
+        }
+        @media  screen and (max-width:500px){
+            body{
+                display: flex;
+                flex-direction: column-reverse;
+            }
+            footer{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-areas: "b"
+                                 "c"
+                                 "d"
+                                 "e"
+                                 "a"
+                                 "a"
+                                 "a";
+            border: 2px solid black;
+        }
+        footer img{
+            padding: 30px;
+        }
+        .logo{
+            width: 100%;
+        }
+        .bottom{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            background-color: #222222;
+            padding: 20px 2px;
+        }
+        .neeche{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+        .upper{
+            width: 0px;
+            height: 0px;
+        }
+        .uper img{
+            width: 0px;
+            height: 0px;
+            border-radius: 0%;
+            margin-left: 0px;
+        }
+        .uper p{
+            font-size: 0px;
+            margin-left: 0px;
+            font-weight: 0;
+        }
+        }
+    </style>
+</head>
+<body>
+    <footer>
+        <div class="logo" style="grid-area: a;display: flex;justify-content: center;align-items: center;border-right: 1px solid black;background-color: #01026e;">
+            <img style="width: 40%;" src="https://archive.org/download/logo-maker-design-creator-mod-apk/logo-maker-design-creator-mod-apk.png" alt="">
+        </div>
+        <div style="grid-area: b;">
+            <h4 style="grid-area: p;">Shop</h4>
+            <p>Gift cards</p>
+            <p>Etsy Registry</p>
+            <p>Sitemap</p>
+            <p>Etsy blog</p>
+            <p>Etsy United Kingdom</p>
+            <p>Etsy Germany</p>
+            <p>Etsy Canada</p>
+        </div>
+        <div style="grid-area: c;">
+            <h4 style="grid-area: q;">Sell</h4>
+            <p>Sell on</p>
+            <p>Teams</p>
+            <p>Forums</p>
+            <p>Affiliates & Creators</p>
+        </div>
+        <div style="grid-area: d;">
+            <h4 style="grid-area: r;">About</h4>
+            <p>Etsy, Inc.</p>
+            <p>Policies</p>
+            <p>Investors</p>
+            <p>Careers</p>
+            <p>Press</p>
+            <p>Impact</p>
+            <p>Legal imprint</p>
+        </div>
+        <div style="grid-area: e;">
+            <h4 style="grid-area: s;">Shop</h4>
+            <p>Gift cards</p>
+            <p>Etsy Registry</p>
+            <p>Sitemap</p>
+            <p>Etsy blog</p>
+            <p>Etsy United Kingdom</p>
+            <p>Etsy Germany</p>
+            <p>Etsy Canada</p>
+        </div>
+    </footer>
+    <div class="bottom">
+        <div class="uper">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSei8iQmJXTCwpJ_JZ-nhz2oejvG15UeBbrSQ&s" alt="">
+            <p style="border-right: 2px solid white;padding-right: 4px;">India</p>
+            <p style="border-right: 2px solid white;padding-right: 4px;">English(IN)</p>
+            <p>₹ (INR)</p>
+        </div>
+        <div class="neeche">
+            <p>©️ 2024 Etsy,inc.</p>
+            <a href="">Terms of use</a>
+            <a href="">Privicy</a>
+            <a href="">Intrest-based ads</a>
+            <a href="">Local shops</a>
+            <a style="margin-right: 10px;" href="">Regions</a>
+        </div>
+    </div>
+</body>
+</html>
