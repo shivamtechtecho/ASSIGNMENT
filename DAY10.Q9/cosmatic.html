@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .parent {
+            width: 100%;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-weight: 400;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 15px;
+            padding: 20px;
+            margin-left: 10px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+            width: 80%;
+            margin: auto;
+        }
+
+        .grid>div {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+
+        .grid>div img {
+            width: 95%;
+            margin: 7px;
+            border-radius: 10px;
+            height: 75%;
+        }
+
+        @media screen and (min-width:501px) and (max-width:800px) {
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+                padding: 20px;
+                width: 80%;
+                margin: auto;
+            }
+        }
+
+        @media screen and (max-width:500px) {
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+                padding: 10px;
+                width: 80%;
+                margin: auto;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav style="width: 100%;background-color: rgb(24, 22, 22);position: fixed;z-index: 1000;top: 0;">
+            <div style="display: flex;justify-content: space-between;align-items: center;width: 80%;">
+                <a href="#">SUGARPLAY</a>
+                <a href="#">LIPS</a>
+                <a href="#">EYES</a>
+                <a href="#">FACE</a>
+                <a href="#">NAILS</a>
+                <a href="#">SKINCARE</a>
+                <a href="#">ACCESORIES</a>
+                <a href="#">GIFTING</a>
+                <a href="#">BESTSELLERS</a>
+                <a href="#">NEWLAUNCHES</a>
+                <a href="#">OFFERS</a>
+                <a href="#">BLOG</a>
+            </div>
+        </nav>
+    </header>
+    <div class="parent">
+        <div style="display: flex;justify-content: center;align-items: center;gap: 20px;margin-top: 80px;">
+            <div style="border: 3px solid rgb(235, 53, 96);height: 0px;width: 100px;"></div>
+            <h2>OFFERS</h2>
+            <div style="border: 3px solid rgb(235, 53, 96);height: 0px;width: 100px;"></div>
+        </div>
+        <div class="grid">
+            <div>
+                <img src="https://in.sugarcosmetics.com/_next/image?url=https://images.sugarcosmetics.com/Homepage/35d38ac8-c1f7-4317-a29d-c86270c9998e.jpg&w=1920&q=75"
+                    alt="">
+                <div style="border-collapse: collapse;margin: auto;display: flex;padding: 10px;justify-content: end;">
+                    <div
+                        style="border: dotted rgb(235, 53, 96);border-top-left-radius: 5px;border-bottom-left-radius: 5px;">
+                        coupon</div>
+                    <div
+                        style="border: dotted rgb(235, 53, 96);border-top-right-radius: 5px;border-bottom-right-radius: 5px;">
+                        $</div>
+                </div>
+            </div>
+            <div>
+                <img src="https://in.sugarcosmetics.com/_next/image?url=https://images.sugarcosmetics.com/Homepage/717e0853-03c4-4b97-8b54-1945ce8924fa.jpg&w=1920&q=75"
+                    alt="">
+                <div style="border-collapse: collapse;margin: auto;display: flex;padding: 10px;justify-content: end;">
+                    <div
+                        style="border: dotted rgb(235, 53, 96);border-top-left-radius: 5px;border-bottom-left-radius: 5px;">
+                        coupon</div>
+                    <div
+                        style="border: dotted rgb(235, 53, 96);border-top-right-radius: 5px;border-bottom-right-radius: 5px;">
+                        $</div>
+                </div>
+            </div>
+            <div>
+                <img src="https://images.sugarcosmetics.com/Promotion/57689980-4832-408a-b43e-593fe85dde39.jpg" alt="">
+                <div style="border-collapse: collapse;margin: auto;display: flex;padding: 10px;justify-content: end;">
+                    <div
+                        style="border: dotted rgb(235, 53, 96);border-top-left-radius: 5px;border-bottom-left-radius: 5px;">
+                        coupon</div>
+                    <div
+                        style="border: dotted rgb(235, 53, 96);border-top-right-radius: 5px;border-bottom-right-radius: 5px;">
+                        $</div>
+                </div>
+            </div>
+            <div>
+                <img src="https://images.sugarcosmetics.com/Promotion/c17e7241-b650-4615-b794-ab99cbfdc4fd.jpg" alt="">
+                <div style="border-collapse: collapse;margin: auto;display: flex;padding: 10px;justify-content: end;">
+                    <div
+                        style="border: dotted rgb(235, 53, 96);border-top-left-radius: 5px;border-bottom-left-radius: 5px;">
+                        coupon</div>
+                    <div
+                        style="border: dotted rgb(235, 53, 96);border-top-right-radius: 5px;border-bottom-right-radius: 5px;">
+                        $</div>
+                </div>
+            </div>
+            <div>
+                <img src="https://in.sugarcosmetics.com/_next/image?url=https://images.sugarcosmetics.com/Homepage/e0c69e17-7245-4ec8-ab0e-ce2e6b974369.jpg&w=1920&q=75"
+                    alt="">
+                <div style="border-collapse: collapse;margin: auto;display: flex;padding: 10px;justify-content: end;">
+                    <div
+                        style="border: dotted rgb(235, 53, 96);border-top-left-radius: 5px;border-bottom-left-radius: 5px;">
+                        coupon</div>
+                    <div
+                        style="border: dotted rgb(235, 53, 96);border-top-right-radius: 5px;border-bottom-right-radius: 5px;">
+                        $</div>
+                </div>
+            </div>
+            <div>
+                <img src="https://in.sugarcosmetics.com/_next/image?url=https://images.sugarcosmetics.com/Homepage/23a083fa-84ca-4725-9367-fd9b465510ba.jpg&w=1920&q=75"
+                    alt="">
+                <div style="border-collapse: collapse;margin: auto;display: flex;padding: 10px;justify-content: end;">
+                    <div
+                        style="border: dotted rgb(235, 53, 96);border-top-left-radius: 5px;border-bottom-left-radius: 5px;">
+                        coupon</div>
+                    <div
+                        style="border: dotted rgb(235, 53, 96);border-top-right-radius: 5px;border-bottom-right-radius: 5px;">
+                        $</div>
+                </div>
+            </div>
+            <div>
+                <img src="https://in.sugarcosmetics.com/_next/image?url=https://images.sugarcosmetics.com/Homepage/3b6c80f7-27d9-4a33-b743-1ded39241349.jpg&w=1920&q=75"
+                    alt="">
+                <div style="border-collapse: collapse;margin: auto;display: flex;padding: 10px;justify-content: end;">
+                    <div
+                        style="border: dotted rgb(235, 53, 96);border-top-left-radius: 5px;border-bottom-left-radius: 5px;">
+                        coupon</div>
+                    <div
+                        style="border: dotted rgb(235, 53, 96);border-top-right-radius: 5px;border-bottom-right-radius: 5px;">
+                        $</div>
+                </div>
+            </div>
+            <div>
+                <img src="https://in.sugarcosmetics.com/_next/image?url=https://images.sugarcosmetics.com/Homepage/37e0f3d5-1cc1-4b5a-9f54-4a24d7881727.jpg&w=1920&q=75"
+                    alt="">
+                <div style="border-collapse: collapse;margin: auto;display: flex;padding: 10px;justify-content: end;">
+                    <div
+                        style="border: dotted rgb(235, 53, 96);border-top-left-radius: 5px;border-bottom-left-radius: 5px;">
+                        coupon</div>
+                    <div
+                        style="border: dotted rgb(235, 53, 96);border-top-right-radius: 5px;border-bottom-right-radius: 5px;">
+                        $</div>
+                </div>
+            </div>
+            <div>
+                <img src="https://in.sugarcosmetics.com/_next/image?url=https://images.sugarcosmetics.com/Homepage/06015794-eb93-4595-8958-a4ab8d21fac2.jpg&w=1920&q=75"
+                    alt="">
+                <div style="border-collapse: collapse;margin: auto;display: flex;padding: 10px;justify-content: end;">
+                    <div
+                        style="border: dotted rgb(235, 53, 96);border-top-left-radius: 5px;border-bottom-left-radius: 5px;">
+                        coupon</div>
+                    <div
+                        style="border: dotted rgb(235, 53, 96);border-top-right-radius: 5px;border-bottom-right-radius: 5px;">
+                        $</div>
+                </div>
+            </div>
+            <div>
+                <img src="https://in.sugarcosmetics.com/_next/image?url=https://images.sugarcosmetics.com/Homepage/a5ec9bc3-85dd-4320-8e83-8ccd36424920.jpg&w=1920&q=75"
+                    alt="">
+                <div style="border-collapse: collapse;margin: auto;display: flex;padding: 10px;justify-content: end;">
+                    <div
+                        style="border: dotted rgb(235, 53, 96);border-top-left-radius: 5px;border-bottom-left-radius: 5px;">
+                        coupon</div>
+                    <div
+                        style="border: dotted rgb(235, 53, 96);border-top-right-radius: 5px;border-bottom-right-radius: 5px;">
+                        $</div>
+                </div>
+            </div>
+            <div>
+                <img src="https://in.sugarcosmetics.com/_next/image?url=https://images.sugarcosmetics.com/Homepage/df5bae1c-0695-4a1a-a6c6-d9bbd5c79011.jpg&w=1920&q=75"
+                    alt="">
+                <div style="border-collapse: collapse;margin: auto;display: flex;padding: 10px;justify-content: end;">
+                    <div
+                        style="border: dotted rgb(235, 53, 96);border-top-left-radius: 5px;border-bottom-left-radius: 5px;">
+                        coupon</div>
+                    <div
+                        style="border: dotted rgb(235, 53, 96);border-top-right-radius: 5px;border-bottom-right-radius: 5px;">
+                        $</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
